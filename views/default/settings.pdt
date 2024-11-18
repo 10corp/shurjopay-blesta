@@ -1,0 +1,31 @@
+<ul>
+    <li>
+        <?php
+            $this->Form->label($this->_('Shurjopay.username', true), 'store_id');
+            $this->Form->fieldText('store_id', (isset($meta['store_id']) ? $meta['store_id'] : null), ['id' => 'store_id']);
+        ?>
+    </li>
+    <li>
+        <?php
+            $this->Form->label($this->_('Shurjopay.password', true), 'store_password');
+            $this->Form->fieldText('store_password', (isset($meta['store_password']) ? $meta['store_password'] : null), ['id' => 'store_password']);
+        ?>
+    </li>
+    <li>
+        <?php
+            $this->Form->label($this->_('Shurjopay.prefix', true), 'store_prefix');
+            $this->Form->fieldText('store_prefix', (isset($meta['store_prefix']) ? $meta['store_prefix'] : null), ['id' => 'store_prefix']);
+        ?>
+    </li>
+    <li>
+        <?php
+            $this->Form->fieldCheckbox('dev_mode', 'true', ((isset($meta['dev_mode']) ? $meta['dev_mode'] : 'false') == 'true'), ['id' => 'dev_mode']);
+            $this->Form->label($this->_('Shurjopay.sandbox', true), 'dev_mode', ['class' => 'inline']);
+        ?>
+        <span class="tooltip"><?php $this->_('AppController.tooltip.text'); ?><div><?php $this->_('Shurjopay.sandbox_note'); ?></div></span>
+    </li>
+</ul>
+
+<div class="title_row">
+    <h3 style="color: red;"><?php  $this->_('Shurjopay.ipn_note'); ?></h3>
+</div>
