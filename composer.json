@@ -1,0 +1,16 @@
+{
+    "name": "10corp/shurjopay-blesta",
+    "description": "ShurjoPay module for Blesta billing software",
+    "license": "MIT",
+    "type": "blesta-gateway-nonmerchant",
+    "require": {
+        "php": ">=8.2",
+        "blesta/composer-installer": "~1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "blesta/composer-installer": true
+        }
+    }
+}
