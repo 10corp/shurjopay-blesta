@@ -1,0 +1,13 @@
+{
+	"version": "1.1.0",
+	"name": "Shurjopay.name",
+	"description": "Shurjopay.description",
+	"authors": [
+		{
+			"name": "shurjoMukhi LTD.",
+			"url": "https://shurjomukhi.com.bd/"
+		}
+	],
+	"currencies": ["BDT","USD"],
+	"signup_url": "https://shurjopay.com.bd/#merchant"
+}
