@@ -1,88 +1,95 @@
-# shurjopay-blesta
-Here’s the complete guide for integrating the **ShurjoPay Module for Blesta** with all the updated information:
+# **ShurjoPay Module for Blesta**  
+**Version:** 2.0  
+**Author:** [10Corp](https://10corp.com)  
+**Powered by:** [shurjoMukhi Ltd.](https://shurjomukhi.com.bd/)
 
 ---
 
-## **ShurjoPay Module for Blesta**
-
-### **Versions**
-- Tested on Blesta 5.10.3 (or later)
-- PHP 8.2 or later
-
+## **Overview**
 The ShurjoPay module for Blesta is simple to install and fully customizable. It allows businesses to securely accept payments via ShurjoPay, enabling transactions with multiple payment methods.
 
-This tutorial assumes you already have a **ShurjoPay account**. If not, please sign up at [ShurjoPay's website](https://shurjopay.com.bd/?aff=10corp.com).
+✅ Tested on **Blesta 5.10.3+**  
+✅ Compatible with **PHP 8.2+**
+
+If you don't have a ShurjoPay account yet, you can [sign up here](https://shurjopay.com.bd/?aff=10corp.com).
 
 ---
+
+## **Installation**
+
+### 1. Install via Composer
+
+```bash
 composer require 10corp/shurjopay-blesta
+```
 
-### **Download the Plugin**
-The ShurjoPay plugin for Blesta can be downloaded [here](#) (provide the link to your plugin repository).
+### 2. Download the Plugin
+
+You can manually download the ShurjoPay plugin for Blesta [here](#) (replace `#` with your plugin repository link).
 
 ---
 
-### **Project Configuration in the ShurjoPay System**
+## **Project Configuration in ShurjoPay System**
 
-1. **Sign in to your ShurjoPay account**:  
-   Log in to your ShurjoPay dashboard.
-
-2. **Get API Information**:  
-   Obtain the following credentials required for integration:  
-   - **API Username**  
-   - **API Password**  
-   - **Merchant Prefix**
-
-3. **Set Notification/Callback URL**:  
-   Configure the **Callback URL** for your project as follows:  
-   ```
+1. **Log in** to your [ShurjoPay dashboard](https://merchant.shurjopay.com.bd/login).
+2. **Obtain API Credentials**:
+   - API Username
+   - API Password
+   - Merchant Prefix
+3. **Set the Callback URL**:
+   ```bash
    http://[your-domain]/[blesta_folder]/callback/gw/[company_id]/shurjopay/
    ```
-4. Save your project configuration in the ShurjoPay system.
+4. Save your project configuration.
 
 ---
 
-### **Setup ShurjoPay Module on Blesta**
+## **Setup ShurjoPay Module on Blesta**
 
-1. **Upload the Plugin**:
-   - Unpack all files from `shurjopay-module-blesta.zip`.
-   - Upload the content of the `upload` folder to your Blesta root folder using any FTP client.
+### 1. Upload the Plugin
+- Extract `shurjopay-module-blesta.zip`.
+- Upload the `upload/` folder contents to your Blesta installation root via FTP.
 
-2. **Install the Gateway**:
-   - In your Blesta dashboard, click **Settings** on the top-right navigation menu and choose **Payment Gateways**.
-   - From the left sidebar, choose **Available** under the Payment Gateways section to list all available gateways.
-   - Locate the ShurjoPay module and click **Install**.
+### 2. Install the Payment Gateway
+- Log into the Blesta admin panel.
+- Navigate:  
+  **Settings** → **Payment Gateways** → **Available**.
+- Find **ShurjoPay** and click **Install**.
 
-3. **Configure the Gateway**:
-   - Enter the required fields, such as:
-     - **API Username**  
-     - **API Password**  
-     - **Merchant Prefix**  
-     - **Callback URL**:  
-       ```
-       http://[your-domain]/[blesta_folder]/callback/gw/[company_id]/shurjopay/
-       ```
-     - Any additional fields needed by ShurjoPay.
-   - Click **Save** to complete the configuration.
+### 3. Configure the Gateway
+Fill out the required fields:
+- API Username
+- API Password
+- Merchant Prefix
+- Callback URL:
+  ```bash
+  http://[your-domain]/[blesta_folder]/callback/gw/[company_id]/shurjopay/
+  ```
+- (Optional) Set any extra configuration fields if needed.
 
----
-
-### **Test Your Integration**
-
-1. Log in as a test user and create an invoice in Blesta.
-2. Attempt to pay using ShurjoPay.
-3. Ensure the transaction completes successfully and the callback updates the payment status.
+Click **Save** to complete.
 
 ---
 
-### **Version Support**
-ShurjoPay provides support for the following Blesta versions:
+## **Testing the Integration**
 
-| **Blesta Version** | **Support** |
-|---------------------|-------------|
-| 4                  | No         |
-| 5                  | Yes         |
+1. Create a test invoice as a user in Blesta.
+2. Choose ShurjoPay as the payment method.
+3. Complete the transaction.
+4. Verify that payment status updates automatically via the callback.
 
 ---
 
-### **Support**
-If you encounter any issues or need assistance, contact **cs(at)10corp.com**.
+## **Blesta Version Support**
+
+| **Blesta Version** | **Support Status** |
+|---------------------|---------------------|
+| 4.x                 | ❌ Not Supported |
+| 5.x                 | ✅ Supported |
+
+---
+
+## **Support**
+
+If you encounter any issues or need assistance:  
+📧 **Email:** cs@10corp.com
