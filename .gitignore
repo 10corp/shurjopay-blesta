@@ -1,0 +1,33 @@
+# Composer
+/vendor/
+/composer.lock
+
+# Node (if using frontend tools)
+/node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Blesta specific (cache, logs)
+/uploads/system/cache/*
+/uploads/system/logs/*
+/uploads/system/tmp/*
+/uploads/system/backups/*
+
+# Environment files
+.env
+
+# IDE specific
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Misc
+*.bak
+*.swp
+*.tmp
+
+# Ignore zip files
+*.zip
