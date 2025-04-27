@@ -8,7 +8,7 @@
 ## **Overview**
 The ShurjoPay module for Blesta is simple to install and fully customizable. It allows businesses to securely accept payments via ShurjoPay, enabling transactions with multiple payment methods.
 
-✅ Tested on **Blesta 5.10.3+**  
+✅ Tested on **Blesta 5.11.2+**  
 ✅ Compatible with **PHP 8.3+**
 
 If you don't have a ShurjoPay account yet, you can [sign up here](https://shurjopay.com.bd/?aff=10corp.com).
