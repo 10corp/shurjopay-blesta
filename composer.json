@@ -1,15 +1,36 @@
 {
-    "name": "blesta/shurjopay",
-    "description": "shurjoPay",
-    "license": "proprietary",
-    "type": "blesta-gateway-nonmerchant",
-    "require": {
-        "blesta/composer-installer": "~1.0"
+  "name": "10corp/shurjopay-blesta",
+  "description": "Official ShurjoPay payment gateway module for Blesta, developed and maintained by 10Corp.",
+  "version": "2.0.0",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "10Corp",
+      "email": "cs@10corp.com",
+      "homepage": "https://10corp.com"
     },
-    "config": {
-        "allow-plugins": {
-            "composer/installers": true,
-            "blesta/composer-installer": true
-        }
+    {
+      "name": "shurjoMukhi Ltd.",
+      "homepage": "https://shurjomukhi.com.bd/"
     }
+  ],
+  "require": {
+    "php": ">=8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "ShurjopayBlesta\\": "upload/components/gateways/shurjopay/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "2.0.x-dev"
+    }
+  },
+  "support": {
+    "email": "cs@10corp.com",
+    "issues": "https://github.com/10corp/shurjopay-blesta/issues",
+    "source": "https://github.com/10corp/shurjopay-blesta"
+  }
 }
