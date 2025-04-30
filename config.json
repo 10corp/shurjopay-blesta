@@ -13,5 +13,5 @@
 		}
 	],
 	"currencies": ["BDT", "USD"],
-	"signup_url": "https://shurjopay.com.bd/#merchant"
+	"signup_url": "https://shurjopay.com.bd/#merchant?=10corp.com"
 }
