@@ -25,7 +25,7 @@ composer require 10corp/shurjopay-blesta
 
 ### 2. Download the Plugin
 
-You can manually download the ShurjoPay plugin for Blesta [here](#) (replace `#` with your plugin repository link).
+You can manually download the ShurjoPay plugin for Blesta [here](https://github.com/10corp/shurjopay-blesta/blob/main/shurjopay-module-blesta.zip).
 
 ---
 
